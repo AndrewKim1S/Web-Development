@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>CSS Rule</title>
+		<style>
+		
+		/* All h2 elements */
+		/* This is an element selector 
+		 Every paragraph will have these styles
+		*/
+		h2 {
+				color: red;
+				text-align: center;
+		}
+
+		/* All with class="highlight" */
+		/* This is a class selector that allows for any
+		element can have this class style if add this class
+		*/
+		.highlight {
+				font-size: 20px;
+				font-weight: bold;
+				font-style: italic;
+				background-color: green;
+				opacity: .6;
+		}
+
+		/* element with id="mainPoint" */
+		/* This is an id selector that allows only one element to
+		to have the style.
+		*/
+		#mainPoint {
+				font-size: 24px;
+				font-weight: bold;
+				background-color: red;
+				opacity: .7;
+		}
+
+		/* all p and h1 elements group styles together */
+		p, h1 {
+				color: blue;
+				text-align:center;
+		}
+
+		</style>
+</head>
+
+<body>
+		<h1>CSS Rule Test</h1>
+
+		<h2>Subheading 1 (h2)</h2>
+		
+		<p class="highlight">CSS works by associating rules with HTML elements. These rules governs 
+		how the content of specificed elements should be displayed. Currently this paragraph is using 
+		a class selector</p>
+
+		<h2>Subheading 2 (h2)</h2>
+		<p class="highlight">This is another example of using the highlight class selector</p>
+
+		<div>This is the main point of the article, so use the main point id selector</div>
+		<span id="mainPoint">id="mainPoint".</span>
+
+</body>
+</html>
