@@ -4,7 +4,28 @@
 		<meta charset="utf-8">
 		<title>CSS Rule</title>
 		<style>
-		
+
+		/* Combining Selectors */
+		/* For every p element that has a big class selector style */
+		p.big {
+				font-size: 20px;
+		}
+
+		/* Every p element being a directly inside of an article element is affected */
+		article > p {
+				color: blue;
+		}
+
+		/* Descendent Selector */
+		/* Every p element in any level of an article element */
+		article p {
+				color: blue;
+		}
+		/* Every p element in an element that is also uses colored class selector is affected */
+		.colored p {
+				color: blue;
+		}
+
 		/* All h2 elements */
 		/* This is an element selector 
 		 Every paragraph will have these styles
